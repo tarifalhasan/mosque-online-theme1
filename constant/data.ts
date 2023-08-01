@@ -1,4 +1,5 @@
-import { NamajTime } from "@/types";
+import { Pilgrimage, Salah, Sawm, Shahadah, Zakat } from "@/assets/images";
+import { NamajTime, PillarsOfIslamType } from "@/types";
 
 export const NavLinks = [
   {
@@ -63,5 +64,38 @@ export const NamazTimeingsData: NamajTime[] = [
     Begins: "12:30 AM",
     Iqamah: "01:30 AM",
     id: 5,
+  },
+];
+
+export const PillarsOfIslamData: PillarsOfIslamType[] = [
+  {
+    name: "Shahadah",
+    surname: "Faith",
+    id: 1,
+    icon: Shahadah,
+  },
+  {
+    name: "Salah",
+    surname: "Prayer",
+    id: 2,
+    icon: Salah,
+  },
+  {
+    name: "Sawn",
+    surname: "(Fasting)",
+    id: 3,
+    icon: Sawm,
+  },
+  {
+    name: "Zakat",
+    surname: "Almsgiving",
+    id: 4,
+    icon: Zakat,
+  },
+  {
+    name: "Pilgrimage",
+    surname: "Pilgrimage",
+    id: 5,
+    icon: Pilgrimage,
   },
 ];

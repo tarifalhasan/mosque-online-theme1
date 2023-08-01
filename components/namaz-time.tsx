@@ -2,10 +2,10 @@ import { NamazTimeingsData } from "@/constant/data"
 
 const NamazTime = () => {
     return (
-        <section id="namaj" className=" px-5 pb-6">
+        <section id="namaj" className=" px-5 ">
             <div>
-                <p className="sub-heading ">Associated Mosque</p>
-                <h2 className="heading1">Namaz Timings</h2>
+                <p className="sub-heading text-center ">Associated Mosque</p>
+                <h2 className="heading1 text-center">Namaz Timings</h2>
             </div>
             <div className={`grid  sm:grid-cols-3 gap-6 xl:grid-cols-6`}>
                 {

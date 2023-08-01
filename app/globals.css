@@ -40,11 +40,16 @@
   }
 
   .sub-heading {
-    @apply text-black text-center text-[15px] font-bold leading-[20px] tracking-[0.45px];
+    @apply text-black text-[15px] font-bold leading-[20px] tracking-[0.45px];
   }
 
   .heading1 {
-    @apply text-secondary text-center text-[2em] font-bold leading-[88px] tracking-[1.8px];
+    @apply text-secondary text-[2em] font-bold leading-[88px] tracking-[1.8px];
+
+  }
+
+  .text-shadow {
+    text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 
   }
 
@@ -63,4 +68,5 @@
 
 body {
   color: #000;
+  background: #FFF;
 }

@@ -1,6 +1,16 @@
-import hero_image from "./hero.png";
-
+import Pilgrimage from "./Pilgrimage.svg";
+import Salah from "./Salah.svg";
+import Sawm from "./Sawm.svg";
+import Shahadah from "./Shahadah.svg";
+import Zakat from "./Zakat.svg";
+import history_image from "./history.png";
+import pillarsOfIslamImage from "./pillars-of-islam.png";
 export {
-    hero_image
+  Pilgrimage,
+  Salah,
+  Sawm,
+  Shahadah,
+  Zakat,
+  history_image,
+  pillarsOfIslamImage,
 };
-

@@ -4,3 +4,10 @@ export type NamajTime = {
   Begins: string;
   Iqamah: string;
 };
+
+export type PillarsOfIslamType = {
+  name: string;
+  id: number | string;
+  icon: any;
+  surname: string;
+};
