@@ -1,5 +1,18 @@
-import { Pilgrimage, Salah, Sawm, Shahadah, Zakat } from "@/assets/images";
-import { NamajTime, PillarsOfIslamType } from "@/types";
+import {
+  Pilgrimage,
+  Salah,
+  Sawm,
+  Shahadah,
+  Zakat,
+  blogimg1,
+  blogimg2,
+} from "@/assets/images";
+import {
+  BlogCardProps,
+  EventsCardTypes,
+  NamajTime,
+  PillarsOfIslamType,
+} from "@/types";
 
 export const NavLinks = [
   {
@@ -82,7 +95,7 @@ export const PillarsOfIslamData: PillarsOfIslamType[] = [
   },
   {
     name: "Sawn",
-    surname: "(Fasting)",
+    surname: "Fasting",
     id: 3,
     icon: Sawm,
   },
@@ -97,5 +110,51 @@ export const PillarsOfIslamData: PillarsOfIslamType[] = [
     surname: "Pilgrimage",
     id: 5,
     icon: Pilgrimage,
+  },
+];
+
+export const BlogsData: BlogCardProps[] = [
+  {
+    image: blogimg1,
+    title: "Is Islam Old Philosophy?",
+    authorName: "Imam Ullah",
+    date: "jan 6, 2022",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
+  },
+  {
+    image: blogimg2,
+    title: "Importance Of Namaz",
+    authorName: "Imam Ullah",
+    date: "jan 8, 2022",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
+  },
+];
+
+export const EventsData: EventsCardTypes[] = [
+  {
+    title: "Is Islam Old Philosophy?",
+    month: "Jan",
+    day: "15",
+    location: "Park Lane, London",
+    authorName: "Imam Ullah",
+    backgroundImage: "/img/events.png",
+  },
+  {
+    title: "Is Islam Old Philosophy?",
+    month: "Jan",
+    day: "22",
+    location: "Park Lane, London",
+    authorName: "Imam Ullah",
+    backgroundImage: null,
+  },
+  {
+    title: "Is Islam Old Philosophy?",
+    month: "Jan",
+    day: "28",
+    location: "Park Lane, London",
+    authorName: "Imam Ullah",
+    backgroundImage: null,
   },
 ];

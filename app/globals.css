@@ -17,21 +17,19 @@
 }
 
 @layer base {
-
   li,
   span {
-    @apply text-[15px] font-normal
+    @apply text-[15px] font-normal;
   }
 }
 
 @layer components {
   .btn {
-
     @apply text-lg font-normal px-10 py-2.5 rounded-[11px] flex justify-between items-center;
   }
 
   .hero-heading {
-    color: #FFF;
+    color: #fff;
     text-align: center;
     text-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.75);
     font-style: normal;
@@ -45,12 +43,15 @@
 
   .heading1 {
     @apply text-secondary text-[2em] font-bold leading-[88px] tracking-[1.8px];
-
   }
 
   .text-shadow {
     text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  }
 
+  input,
+  textarea {
+    @apply border-2 w-full border-[#1DBBB4] rounded-[11px] bg-white px-5 py-3 text-base lg:text-lg placeholder:text-opacity-40;
   }
 
   @media (min-width: 1024px) {
@@ -68,5 +69,5 @@
 
 body {
   color: #000;
-  background: #FFF;
+  background: #fff;
 }
