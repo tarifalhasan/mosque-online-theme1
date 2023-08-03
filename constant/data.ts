@@ -29,7 +29,7 @@ export const NavLinks = [
   },
   {
     name: "Even & Blog",
-    href: "#Even_&_Blog ",
+    href: "#events",
   },
   {
     name: "Gallery",

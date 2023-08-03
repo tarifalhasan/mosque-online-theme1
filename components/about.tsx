@@ -4,7 +4,7 @@ import Container from "./container";
 
 const About = () => {
   return (
-    <section id="about" className=" relative  ">
+    <section className=" relative  ">
       <Container>
         <div className="flex gap-10 lg:justify-between flex-col lg:flex-row lg:items-center">
           <div className=" space-y-5 w-full lg:basis-1/2">
