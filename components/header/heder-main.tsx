@@ -1,5 +1,5 @@
 "use client";
-import { NavLinks } from "@/constant/data";
+import { MobileNavLinks, NavLinks } from "@/constant/data";
 import Link from "next/link";
 import { useState } from "react";
 import { HiMenuAlt1 } from "react-icons/hi";
@@ -36,8 +36,12 @@ const HeaderMain = () => {
             </div>
           </div>
           <ul className=" space-y-5 ">
-            {NavLinks.map((link, index) => (
-              <li key={index} className="  flex justify-center">
+            {MobileNavLinks.map((link, index) => (
+              <li
+                onClick={toggleMenu}
+                key={index}
+                className="  flex justify-center"
+              >
                 <Link
                   href={link.href}
                   className="text-gray-700 text-lg  text-left hover:text-gray-900"

@@ -40,6 +40,32 @@ export const NavLinks = [
     href: "#contact ",
   },
 ];
+export const MobileNavLinks = [
+  {
+    name: "Home",
+    href: "/",
+  },
+  {
+    name: "About",
+    href: "#m_about",
+  },
+  {
+    name: "Pillars of Islam ",
+    href: "#Pillars_of_Islam ",
+  },
+  {
+    name: "Even & Blog",
+    href: "#events",
+  },
+  {
+    name: "Gallery",
+    href: "#gallery ",
+  },
+  {
+    name: "Contact",
+    href: "#contact ",
+  },
+];
 
 export const NamazTimeingsData: NamajTime[] = [
   {
