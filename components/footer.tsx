@@ -1,4 +1,8 @@
+"use client";
+
+import dynamic from "next/dynamic";
 import Link from "next/link";
+import { useForm } from "react-hook-form";
 import {
   FaFacebookF,
   FaGooglePlusG,
@@ -13,6 +17,13 @@ import { TfiYoutube } from "react-icons/tfi";
 import Container from "./container";
 
 const Footer = () => {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
+  const onSubmit = (data: any) => console.log(data);
+
   return (
     <footer>
       <div className=" min-h-[800px] bg-footer-bg bg-no-repeat bg-cover  w-full h-full">
@@ -30,18 +41,24 @@ const Footer = () => {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore.
             </p>
-            <ul className=" flex items-center gap-4">
-              <li>
-                <button className="btn bg-white hover:bg-opacity-80 text-secondary">
-                  Enter Email
-                </button>
-              </li>
-              <li>
-                <button className="btn bg-white hover:bg-opacity-80 text-secondary">
-                  Go
-                </button>
-              </li>
-            </ul>
+            <form
+              onSubmit={handleSubmit(onSubmit)}
+              className=" flex items-center gap-4"
+            >
+              <input
+                placeholder="Enter Email"
+                className="btn px-3 focus:outline-none bg-white hover:bg-opacity-80 text-secondary"
+                required
+                {...register("email")}
+              />
+
+              <button
+                type="submit"
+                className="btn bg-white hover:bg-opacity-80 text-secondary"
+              >
+                Go
+              </button>
+            </form>
           </div>
           <div className="grid pt-16 sm:grid-cols-2 lg:grid-cols-4">
             <div className="">
@@ -141,10 +158,10 @@ const Footer = () => {
             </div>
           </div>
           <div className=" border-t-2 border-white pb-5 mt-16 lg:mt-24 ">
-            <h3 className=" text-[22px]  text-white pt-5 font-bold text-center">
+            <h3 className=" text-lg lg:text-[22px]  text-white pt-5 font-bold text-center">
               TERMS & PRIVACY POLICY
             </h3>
-            <p className=" text-lg text-center font-normal text-white max-w-[1034px] mx-auto">
+            <p className=" text-sm lg:text-lg text-center font-normal text-white max-w-[1034px] mx-auto">
               By accessing this Site, you accept the Mosques.online Terms and
               Conditions of Use. GeoTech acknowledges and honors the privacy of
               users of www.mosque.online and other services offered through this
@@ -154,7 +171,7 @@ const Footer = () => {
         </Container>
       </div>
       <div className=" bg-white py-5">
-        <p className=" text-lg text-center">
+        <p className=" text-sm lg:text-lg text-center">
           Copyright © 2022 mosques.online. All rights reserved.
         </p>
       </div>
@@ -162,4 +179,6 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default dynamic(() => Promise.resolve(Footer), {
+  ssr: false,
+});

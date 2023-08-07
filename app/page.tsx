@@ -14,7 +14,7 @@ export default function Home() {
     <main>
       <TopHeader />
       <HeaderMain />
-      <div className=" space-y-8 lg:space-y-20">
+      <div className="">
         <Hero />
         <NamazTime />
         <About />
